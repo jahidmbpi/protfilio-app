@@ -5,6 +5,7 @@ import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import Lottie from "lottie-react";
 import animationData from "../../../../public/Untitledfile10.json";
+import { HyperText } from "@/components/ui/hyper-text";
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const [scrolly, setScrolly] = useState(0);
@@ -41,7 +42,7 @@ export default function Navbar() {
           <ul className="flex gap-4 font-medium text-[17px] font-mono">
             {navitem.map((item, index) => (
               <Link href={item.path} key={index}>
-                {item.route}
+                <HyperText className="text-[17px]">{item.route}</HyperText>
               </Link>
             ))}
           </ul>
