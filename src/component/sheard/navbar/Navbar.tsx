@@ -3,16 +3,17 @@ import Link from "next/link";
 import { navitem } from "./navItem";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-
+import Lottie from "lottie-react";
+import animationData from "../../../../public/Untitledfile10.json";
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   console.log(open);
   return (
-    <div>
-      <div className="flex items-center justify-between max-w-7xl mx-auto w-full mt-5">
+    <div className="">
+      <div className="flex items-center justify-between max-w-7xl mx-auto w-full mt-4">
         {/* logo */}
-        <div>
-          <h2>jahid</h2>
+        <div className="w-[90px] rounded-full">
+          <Lottie animationData={animationData} loop={true} />
         </div>
         {/* dekstob menu */}
         <div className="hidden md:block">
