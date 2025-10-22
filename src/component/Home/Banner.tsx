@@ -3,7 +3,6 @@ import { Highlight } from "@/components/ui/hero-highlight";
 import Lottie from "lottie-react";
 import { Typewriter } from "react-simple-typewriter";
 import animationData from "../../../public/banner.json";
-import { Button } from "@/components/ui/button";
 export default function Banner() {
   return (
     <div className="max-w-7xl mx-auto w-full ">
@@ -34,11 +33,17 @@ export default function Banner() {
             Hi, I’m Jahid — a passionate MERN Stack Developer dedicated to
             building creative, functional, and performance-driven web solutions.
           </p>
-          <div className="flex gap-6">
-            <button className="px-[30px] py-2.5 border rounded-lg bg-[#2090fd] text-[18px] uppercase hover:bg-[#52a6fb]">
-              resume
+          <div className="flex  md:justify-start gap-4 md:gap-6 mt-4">
+            {/* Resume Button */}
+            <button className="relative px-5 py-2 md:px-8 md:py-2.5 text-sm md:text-lg overflow-hidden font-semibold text-white uppercase rounded-lg md:rounded-xl bg-gradient-to-r from-[#007BFF] to-[#00C6FF] transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-[0_0_20px_#00C6FF]">
+              <span className="relative z-10">Resume</span>
+              <span className="absolute inset-0 bg-gradient-to-r from-[#00C6FF] to-[#007BFF] opacity-0 transition-opacity duration-300 ease-in-out hover:opacity-100 rounded-lg md:rounded-xl"></span>
             </button>
-            <Button variant="default">blog</Button>
+
+            {/* Blog Button */}
+            <button className="relative px-5 py-2 md:px-8 md:py-3 text-sm md:text-lg overflow-hidden font-semibold text-gray-300 uppercase rounded-lg md:rounded-xl border border-[#00C6FF] bg-transparent transition-all duration-300 ease-in-out hover:bg-[#00C6FF]/10 hover:text-[#00C6FF] hover:shadow-[0_0_20px_#00C6FF]">
+              <span className="relative z-10">Blog</span>
+            </button>
           </div>
         </div>
         <div className="flex-1 flex items-center justify-center p-6 mt-10 md:mt-0">
