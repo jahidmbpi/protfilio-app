@@ -39,7 +39,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} ${orbitron.variable} ${nunito.variable} antialiased bg-linear-to-bl from-[#519ff1] via-[#f7f7f7] to-[#b6b3b3]`}
+        className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} ${orbitron.variable} ${nunito.variable} antialiased bg-linear-to-bl from-[#519ff1] via-[#f7f7f7] to-[#dcdbdb]`}
       >
         {children}
       </body>
