@@ -12,6 +12,9 @@ import { SiExpress } from "react-icons/si";
 import { SiPrisma } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
 import { FaPython } from "react-icons/fa";
+import { SiMongodb } from "react-icons/si";
+import { SiPostgresql } from "react-icons/si";
+import { SiMongoose } from "react-icons/si";
 
 export default function Skills() {
   return (
@@ -23,7 +26,7 @@ export default function Skills() {
           efficient web applications.
         </p>
       </div>
-      <div>
+      <div className="space-y-4">
         <div className="space-y-4">
           <div className="flex space-x-2 items-center">
             <h2 className="capitalize text-gray-600 font-sans">frontant</h2>
@@ -116,7 +119,7 @@ export default function Skills() {
           {/* tecnology */}
           <div className="grid grid-cols-4 gap-4">
             <div className=" border shadow-lg border-[#c9cbcd] rounded-sm flex items-center justify-start p-3 space-x-2">
-              <FaNodeJs size={30} className="text-[#e34f26]" />
+              <FaNodeJs size={30} className="text-[#50a750]" />
               <div>
                 <h2 className="text-black ">Node.js</h2>
                 <p className="bg-[#b8f5cf] inline-block rounded-sm px-2 text-[12px]">
@@ -199,7 +202,7 @@ export default function Skills() {
           {/* tecnology */}
           <div className="grid grid-cols-4 gap-4">
             <div className=" border shadow-lg border-[#c9cbcd] rounded-sm flex items-center justify-start p-3 space-x-2">
-              <SiJavascript size={30} className="text-amber-300" />
+              <SiMongodb size={30} className="text-[#47a248]" />
               <div>
                 <h2 className="text-black ">mongoDB</h2>
                 <p className="bg-[#b8f5cf] inline-block rounded-sm px-2 text-[12px]">
@@ -208,7 +211,7 @@ export default function Skills() {
               </div>
             </div>
             <div className=" border shadow-lg border-[#c9cbcd] rounded-sm flex items-center justify-start p-3 space-x-2">
-              <SiTypescript size={30} className="text-[#3178c6]" />
+              <SiPostgresql size={30} className="text-[#3178c6]" />
               <div>
                 <h2 className="text-black ">PostgreSQL</h2>
                 <p className="bg-[#b8f5cf] inline-block rounded-sm px-2 text-[12px]">
@@ -217,7 +220,7 @@ export default function Skills() {
               </div>
             </div>
             <div className=" border shadow-lg border-[#c9cbcd] rounded-sm flex items-center justify-start p-3 space-x-2">
-              <FaPython size={30} className="text-[#1572b6]" />
+              <SiMongoose size={30} className="text-[#1572b6]" />
               <div>
                 <h2 className="text-black ">mongoose</h2>
                 <p className="bg-[#bedbff] inline-block rounded-sm px-2 text-[12px]">
