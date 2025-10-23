@@ -15,6 +15,12 @@ import { FaPython } from "react-icons/fa";
 import { SiMongodb } from "react-icons/si";
 import { SiPostgresql } from "react-icons/si";
 import { SiMongoose } from "react-icons/si";
+import { SiPopos } from "react-icons/si";
+import { FaWindows } from "react-icons/fa";
+import { FaGitAlt } from "react-icons/fa";
+
+import { SiPostman } from "react-icons/si";
+import { VscVscode } from "react-icons/vsc";
 
 export default function Skills() {
   return (
@@ -225,6 +231,71 @@ export default function Skills() {
                 <h2 className="text-black ">mongoose</h2>
                 <p className="bg-[#bedbff] inline-block rounded-sm px-2 text-[12px]">
                   Intermediate
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="space-y-4">
+          <div className="flex gap-2 items-center">
+            <h2 className="capitalize text-gray-600 font-sans">
+              Oparating System
+            </h2>
+            <Separator className="flex-1 text-[#c9cbcd]" />
+          </div>
+          {/* tecnology */}
+          <div className="grid grid-cols-4 gap-4">
+            <div className=" border shadow-lg border-[#c9cbcd] rounded-sm flex items-center justify-start p-3 space-x-2">
+              <SiPopos size={30} className="text-[#6d6d6d]" />
+              <div>
+                <h2 className="text-black ">Pop!_OS (Currently Using)</h2>
+                <p className="bg-[#b8f5cf] inline-block rounded-sm px-2 text-[12px]">
+                  Advanced
+                </p>
+              </div>
+            </div>
+            <div className=" border shadow-lg border-[#c9cbcd] rounded-sm flex items-center justify-start p-3 space-x-2">
+              <FaWindows size={30} className="text-[#3178c6]" />
+              <div>
+                <h2 className="text-black ">Windows (Previously Used)</h2>
+                <p className="bg-[#b8f5cf] inline-block rounded-sm px-2 text-[12px]">
+                  Advanced
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="space-y-4">
+          <div className="flex gap-2 items-center">
+            <h2 className="capitalize text-gray-600 font-sans">Tools</h2>
+            <Separator className="flex-1 text-[#c9cbcd]" />
+          </div>
+          {/* tecnology */}
+          <div className="grid grid-cols-4 gap-4">
+            <div className=" border shadow-lg border-[#c9cbcd] rounded-sm flex items-center justify-start p-3 space-x-2">
+              <FaGitAlt size={30} className="text-[#f05032]" />
+              <div>
+                <h2 className="text-black ">Git</h2>
+                <p className="bg-[#b8f5cf] inline-block rounded-sm px-2 text-[12px]">
+                  Advanced
+                </p>
+              </div>
+            </div>
+            <div className=" border shadow-lg border-[#c9cbcd] rounded-sm flex items-center justify-start p-3 space-x-2">
+              <SiPostman size={30} className="text-[#3178c6]" />
+              <div>
+                <h2 className="text-black ">Postman</h2>
+                <p className="bg-[#b8f5cf] inline-block rounded-sm px-2 text-[12px]">
+                  Advanced
+                </p>
+              </div>
+            </div>
+            <div className=" border shadow-lg border-[#c9cbcd] rounded-sm flex items-center justify-start p-3 space-x-2">
+              <VscVscode size={30} className="text-[#3178c6]" />
+              <div>
+                <h2 className="text-black ">VS Code</h2>
+                <p className="bg-[#b8f5cf] inline-block rounded-sm px-2 text-[12px]">
+                  Advanced
                 </p>
               </div>
             </div>
