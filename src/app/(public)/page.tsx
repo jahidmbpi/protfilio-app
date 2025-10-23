@@ -6,7 +6,7 @@ export default function Home() {
     <div>
       <Banner></Banner>
       <div className="flex items-center justify-center">
-        <h2 className="text-3xl font-bold capitalize">about me</h2>
+        <h2 className="text-3xl font-bold capitalize my-10">about me</h2>
       </div>
       <About></About>
     </div>
