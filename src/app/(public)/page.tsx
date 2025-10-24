@@ -18,6 +18,11 @@ export default function Home() {
         </h2>
       </div>
       <Skils></Skils>
+      <div className="max-w-7xl mx-auto w-full">
+        <h2 className="text-3xl font-bold capitalize md:my-[100px] my-10 text-center">
+          projects
+        </h2>
+      </div>
     </div>
   );
 }

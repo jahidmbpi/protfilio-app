@@ -1,0 +1,19 @@
+/* Swiper CSS Isolation */
+.mySwiper {
+  width: 100%;
+  max-width: 500px;
+  height: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.mySwiper .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(237, 231, 231);
+  color: rgb(224, 212, 212);
+  font-size: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #bdbfbf77;
+}

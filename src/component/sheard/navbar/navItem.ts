@@ -12,8 +12,8 @@ export const navitem = [
     route: "Contact",
   },
   {
-    path: "/project",
-    route: "Project",
+    path: "/projects",
+    route: "Projects",
   },
   {
     path: "/blogs",

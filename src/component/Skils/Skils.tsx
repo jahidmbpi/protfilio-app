@@ -25,21 +25,21 @@ import { VscVscode } from "react-icons/vsc";
 export default function Skills() {
   return (
     <div className="max-w-7xl mx-auto w-full">
-      <div className="space-y-4 mb-8">
+      <div className="space-y-4 mb-8 p-2 md:p-0">
         <h2 className="text-2xl font-semibold">Technology</h2>
         <p>
           Technologies and tools I frequently use for building scalable and
           efficient web applications.
         </p>
       </div>
-      <div className="space-y-4">
+      <div className="space-y-4 ">
         <div className="space-y-4">
           <div className="flex space-x-2 items-center">
             <h2 className="capitalize text-gray-600 font-sans">frontant</h2>
             <Separator className=" w-full text-[#c9cbcd]" />
           </div>
           {/* tecnology */}
-          <div className="grid grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
             <div className=" border shadow-lg border-[#c9cbcd] rounded-sm flex items-center justify-start p-3 space-x-2">
               <FaHtml5 size={30} className="text-[#e34f26]" />
               <div>
@@ -123,7 +123,7 @@ export default function Skills() {
             <Separator className=" w-full text-[#c9cbcd]" />
           </div>
           {/* tecnology */}
-          <div className="grid grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
             <div className=" border shadow-lg border-[#c9cbcd] rounded-sm flex items-center justify-start p-3 space-x-2">
               <FaNodeJs size={30} className="text-[#50a750]" />
               <div>
@@ -161,7 +161,7 @@ export default function Skills() {
             <Separator className="flex-1 text-[#c9cbcd]" />
           </div>
           {/* tecnology */}
-          <div className="grid grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
             <div className=" border shadow-lg border-[#c9cbcd] rounded-sm flex items-center justify-start p-3 space-x-2">
               <SiJavascript size={30} className="text-amber-300" />
               <div>
@@ -206,7 +206,7 @@ export default function Skills() {
             <Separator className="flex-1 text-[#c9cbcd]" />
           </div>
           {/* tecnology */}
-          <div className="grid grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
             <div className=" border shadow-lg border-[#c9cbcd] rounded-sm flex items-center justify-start p-3 space-x-2">
               <SiMongodb size={30} className="text-[#47a248]" />
               <div>
@@ -244,7 +244,7 @@ export default function Skills() {
             <Separator className="flex-1 text-[#c9cbcd]" />
           </div>
           {/* tecnology */}
-          <div className="grid grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
             <div className=" border shadow-lg border-[#c9cbcd] rounded-sm flex items-center justify-start p-3 space-x-2">
               <SiPopos size={30} className="text-[#6d6d6d]" />
               <div>
@@ -271,7 +271,7 @@ export default function Skills() {
             <Separator className="flex-1 text-[#c9cbcd]" />
           </div>
           {/* tecnology */}
-          <div className="grid grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
             <div className=" border shadow-lg border-[#c9cbcd] rounded-sm flex items-center justify-start p-3 space-x-2">
               <FaGitAlt size={30} className="text-[#f05032]" />
               <div>
@@ -282,7 +282,7 @@ export default function Skills() {
               </div>
             </div>
             <div className=" border shadow-lg border-[#c9cbcd] rounded-sm flex items-center justify-start p-3 space-x-2">
-              <SiPostman size={30} className="text-[#3178c6]" />
+              <SiPostman size={30} className="text-[#f05032]" />
               <div>
                 <h2 className="text-black ">Postman</h2>
                 <p className="bg-[#b8f5cf] inline-block rounded-sm px-2 text-[12px]">

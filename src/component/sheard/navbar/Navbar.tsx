@@ -24,6 +24,7 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   console.log(visible);
+  console.log(scrolly);
 
   return (
     <div
@@ -31,7 +32,7 @@ export default function Navbar() {
         visible ? "py-0 shadow-lg" : "py-7 "
       }`}
     >
-      <div className="flex items-center justify-between max-w-7xl mx-auto w-full relative ">
+      <div className="flex items-center justify-between max-w-7xl mx-auto w-full relative inset-x-0  ">
         {/* logo */}
         <div className="w-[90px] rounded-full">
           <Lottie animationData={animationData} loop={true} />
@@ -48,7 +49,7 @@ export default function Navbar() {
         </div>
         {/* Mobile Menu Icon */}
         <div
-          className="md:hidden cursor-pointer"
+          className="md:hidden cursor-pointer pr-2.5"
           onClick={() => setOpen(!open)}
         >
           {open ? <X size={30} /> : <Menu size={30} />}
