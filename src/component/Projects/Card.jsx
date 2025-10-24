@@ -11,11 +11,10 @@ import "swiper/css/navigation";
 import "../Projects/card.css";
 
 export default function Card() {
-  const [cardIndex, sercardIndex] = useState(0);
-  console.log(cardIndex);
+  const [cardIndex, setCardIndex] = useState(0);
 
   const handleSlideChange = (swiper) => {
-    sercardIndex(swiper.realIndex);
+    setCardIndex(swiper.realIndex);
   };
 
   return (

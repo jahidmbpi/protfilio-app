@@ -17,3 +17,9 @@
   border-radius: 20px;
   box-shadow: 0 0 10px #bdbfbf77;
 }
+
+@media (max-width: 640px) {
+  .mySwiper {
+    height: 300px;
+  }
+}
