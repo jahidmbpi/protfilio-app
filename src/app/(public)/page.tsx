@@ -1,5 +1,6 @@
 import About from "@/component/About/About";
 import Banner from "@/component/Home/Banner";
+import Projects from "@/component/Projects/Projects";
 import Skils from "@/component/Skils/Skils";
 
 export default function Home() {
@@ -23,6 +24,7 @@ export default function Home() {
           projects
         </h2>
       </div>
+      <Projects></Projects>
     </div>
   );
 }
