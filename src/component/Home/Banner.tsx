@@ -8,10 +8,10 @@ export default function Banner() {
     <div className="max-w-7xl mx-auto w-full ">
       <div className=" items-center justify-between flex h-[120vh] flex-col-reverse mt-8S md:flex-row">
         <div className="flex-1 space-y-5 p-2 md:p-0">
-          <h2 className="capitalize text-[16px]  font-sans p-[4px]">hi,I’m</h2>
+          <h2 className="capitalize text-[16px]  font-sans p-1">hi,I’m</h2>
 
           <h2 className="text-3xl md:text-4xl font-semibold font-sans">
-            <Highlight> jahidul islam</Highlight>
+            <Highlight> Jahidul Islam</Highlight>
           </h2>
 
           <h2 className="text-4xl md:text-6xl font-medium font-popinse text-[#112A46] uppercase">
@@ -37,7 +37,7 @@ export default function Banner() {
             {/* Resume Button */}
             <button className="relative px-5 py-2 md:px-8 md:py-2.5 text-sm md:text-lg overflow-hidden font-semibold text-white uppercase rounded-lg md:rounded-xl bg-gradient-to-r from-[#007BFF] to-[#00C6FF] transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-[0_0_20px_#00C6FF]">
               <span className="relative z-10">Resume</span>
-              <span className="absolute inset-0 bg-gradient-to-r from-[#00C6FF] to-[#007BFF] opacity-0 transition-opacity duration-300 ease-in-out hover:opacity-100 rounded-lg md:rounded-xl"></span>
+              <span className="absolute inset-0 bg-linear-to-r from-[#00C6FF] to-[#007BFF] opacity-0 transition-opacity duration-300 ease-in-out hover:opacity-100 rounded-lg md:rounded-xl"></span>
             </button>
 
             {/* Blog Button */}
