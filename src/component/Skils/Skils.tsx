@@ -32,11 +32,11 @@ export default function Skills() {
           efficient web applications.
         </p>
       </div>
-      <div className="space-y-4 ">
+      <div className="space-y-4 p-2">
         <div className="space-y-4">
-          <div className="flex space-x-2 items-center">
+          <div className="flex gap-4 items-center">
             <h2 className="capitalize text-gray-600 font-sans">frontant</h2>
-            <Separator className=" w-full text-[#c9cbcd]" />
+            <Separator className="flex-1 min-w-5 pr-2" />
           </div>
           {/* tecnology */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
@@ -120,7 +120,7 @@ export default function Skills() {
         <div className="space-y-4">
           <div className="flex space-x-2 items-center">
             <h2 className="capitalize text-gray-600 font-sans">Backend</h2>
-            <Separator className=" w-full text-[#c9cbcd]" />
+            <Separator className="flex-1 min-w-5 pr-2" />
           </div>
           {/* tecnology */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
@@ -158,7 +158,7 @@ export default function Skills() {
             <h2 className="capitalize text-gray-600 font-sans">
               programming language
             </h2>
-            <Separator className="flex-1 text-[#c9cbcd]" />
+            <Separator className="flex-1 min-w-5 pr-2" />
           </div>
           {/* tecnology */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
@@ -203,7 +203,7 @@ export default function Skills() {
         <div className="space-y-4">
           <div className="flex gap-2 items-center">
             <h2 className="capitalize text-gray-600 font-sans">Databases</h2>
-            <Separator className="flex-1 text-[#c9cbcd]" />
+            <Separator className="flex-1 min-w-5 pr-2" />
           </div>
           {/* tecnology */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
@@ -241,7 +241,7 @@ export default function Skills() {
             <h2 className="capitalize text-gray-600 font-sans">
               Oparating System
             </h2>
-            <Separator className="flex-1 text-[#c9cbcd]" />
+            <Separator className="flex-1 min-w-5 pr-2" />
           </div>
           {/* tecnology */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
@@ -268,7 +268,7 @@ export default function Skills() {
         <div className="space-y-4">
           <div className="flex gap-2 items-center">
             <h2 className="capitalize text-gray-600 font-sans">Tools</h2>
-            <Separator className="flex-1 text-[#c9cbcd]" />
+            <Separator className="flex-1 min-w-5 pr-2" />
           </div>
           {/* tecnology */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">

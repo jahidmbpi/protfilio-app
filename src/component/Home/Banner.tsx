@@ -5,8 +5,8 @@ import { Typewriter } from "react-simple-typewriter";
 import animationData from "../../../public/banner.json";
 export default function Banner() {
   return (
-    <div className="max-w-7xl mx-auto w-full ">
-      <div className=" items-center justify-between flex h-[120vh] flex-col-reverse mt-8S md:flex-row">
+    <div className="max-w-7xl mx-auto w-full">
+      <div className=" items-center justify-between flex h-screen flex-col-reverse mt-8S md:flex-row">
         <div className="flex-1 space-y-5 p-2 md:p-0">
           <h2 className="capitalize text-[16px]  font-sans p-1">hi,I’m</h2>
 

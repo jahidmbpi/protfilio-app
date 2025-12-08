@@ -9,6 +9,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
   const [scrolly, setScrolly] = useState(0);
   const [visible, setVisible] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
       const currentScroll = window.scrollY || 0;
@@ -28,43 +29,48 @@ export default function Navbar() {
 
   return (
     <div
-      className={`fixed w-full top-0 z-50 transition-all duration-500 ease-in-out ${
-        visible ? "py-0 shadow-lg" : "py-7 "
+      className={`fixed  w-full  left-0 top-0 z-50 transition-all duration-500 ease-in-out  ${
+        visible ? "py-0  shadow-lg" : "py-7 "
       }`}
     >
-      <div className="flex items-center justify-between max-w-7xl mx-auto w-full relative inset-x-0  ">
-        {/* logo */}
-        <div className="w-[90px] rounded-full">
-          <Lottie animationData={animationData} loop={true} />
-        </div>
-        {/* dekstob menu */}
-        <div className="hidden md:block">
-          <ul className="flex gap-4 overflow-hidden py-2 text-[18px] font-bold">
-            {navitem.map((item, index) => (
-              <Link href={item.path} key={index}>
-                {item.route}
-              </Link>
-            ))}
-          </ul>
-        </div>
-        {/* Mobile Menu Icon */}
-        <div
-          className="md:hidden cursor-pointer pr-2.5"
-          onClick={() => setOpen(!open)}
-        >
-          {open ? <X size={30} /> : <Menu size={30} />}
-        </div>
+      <div className=" md:max-w-7xl mx-auto w-full overflow-hidden">
+        <div className="flex items-center justify-between  relative inset-x-0  ">
+          <div className="w-[90px] rounded-full">
+            <Lottie animationData={animationData} loop={true} />
+          </div>
 
-        <div className="absolute top-0 left-0 w-[70%]">
+          <div className="hidden md:block">
+            <ul className="flex gap-4 overflow-hidden py-2 text-[16px] text-gray-700  font-medium">
+              {navitem.map((item, index) => (
+                <Link href={item.path} key={index}>
+                  {item.route}
+                </Link>
+              ))}
+            </ul>
+          </div>
+
+          <div
+            className="md:hidden cursor-pointer text-gray-800 "
+            onClick={() => setOpen(!open)}
+          >
+            {open ? <X size={32} /> : <Menu size={32} />}
+          </div>
+        </div>
+        <div className="absolute top-0 left-0 w-[70%] overflow-hidden">
           <div
             className={`${
               open ? "translate-x-0 " : "-translate-x-full"
             } transition-transform duration-700 ease-in-out w-full `}
           >
-            <div className="block md:hidden  h-screen bg-[#111111]">
-              <ul className="flex flex-col gap-4 font-medium text-[17px] font-mono items-center pt-10">
+            <div className="block md:hidden  h-screen bg-[#111111]/20">
+              <ul className="flex flex-col gap-4 text-sm font-medium font-mono items-center pt-10">
                 {navitem.map((item, index) => (
-                  <Link href={item.path} key={index}>
+                  <Link
+                    onClick={() => setOpen(!open)}
+                    className=""
+                    href={item.path}
+                    key={index}
+                  >
                     {item.route}
                   </Link>
                 ))}

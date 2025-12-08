@@ -4,10 +4,10 @@ import projectSvg from "../../../public/project.json";
 import Lottie from "lottie-react";
 export default function Projects() {
   return (
-    <div className="max-w-7xl mx-auto min-h-screen items-center justify-center flex ">
+    <div className="max-w-7xl mx-auto items-center justify-center flex ">
       <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-6 w-full p-2">
         {/* Left section */}
-        <div className="flex-1 p-6 w-[90%] rounded-xl text-white flex items-center justify-center">
+        <div className="flex-1 p-6 w-[90%] rounded-xl text-white flex items-center justify-center overflow-hidden">
           <Card />
         </div>
 
