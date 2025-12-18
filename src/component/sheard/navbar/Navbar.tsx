@@ -24,8 +24,6 @@ export default function Navbar() {
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-  console.log(visible);
-  console.log(scrolly);
 
   return (
     <div
