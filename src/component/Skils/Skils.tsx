@@ -24,10 +24,10 @@ import { VscVscode } from "react-icons/vsc";
 
 export default function Skills() {
   return (
-    <div className="max-w-7xl mx-auto w-full">
+    <div className="max-w-6xl mx-auto w-full">
       <div className="space-y-4 mb-8 p-2 md:p-0">
-        <h2 className="text-2xl font-semibold">Technology</h2>
-        <p>
+        <h2 className="text-2xl font-semibold px-2">Technology</h2>
+        <p className="px-2">
           Technologies and tools I frequently use for building scalable and
           efficient web applications.
         </p>

@@ -31,14 +31,14 @@ export default function Navbar() {
         visible ? "py-0  shadow-lg" : "py-7 "
       }`}
     >
-      <div className=" md:max-w-7xl mx-auto w-full overflow-hidden">
+      <div className=" md:max-w-6xl mx-auto w-full overflow-hidden">
         <div className="flex items-center justify-between  relative inset-x-0  ">
           <div className="w-[90px] rounded-full">
             <Lottie animationData={animationData} loop={true} />
           </div>
 
           <div className="hidden md:block">
-            <ul className="flex gap-4 overflow-hidden py-2 text-[16px] text-gray-700  font-medium">
+            <ul className="flex gap-4 overflow-hidden py-2 md:p-2 text-[15px] text-gray-700  font-medium">
               {navitem.map((item, index) => (
                 <Link href={item.path} key={index}>
                   {item.route}

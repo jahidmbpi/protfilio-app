@@ -20,26 +20,26 @@ export default function BlogCard({ post }: FeturePostCardProps) {
           className="object-cover"
         ></Image>
       </div>
-      <div className="">
+      <div className=" space-y-2">
         <h2 className="font-sans font-semibold text-black/80">{post.title}</h2>
-        <p className="font-sans font-normal text-slate-700 text-[16px]">
+        <p className="font-sans font-normal text-slate-700 text-[15px]">
           {post.contant.split(" ").slice(0, 20).join(" ") +
             (post.contant.split(" ").length > 20 ? "..." : "")}{" "}
         </p>
         <div className="flex items-center justify-between">
-          <h2 className="flex gap-2 items-center">
+          <h2 className="flex gap-2 items-center font-sans text-[14px]">
             {" "}
             <CircleUserRound />
             <span> {post.author.name}</span>
           </h2>
-          <p>{post.viewCount} views</p>
+          <p className="text-[14px] font-sans">{post.viewCount} views</p>
         </div>
         <div
           onClick={() => navigate.push(`/blogs/${post.id}`)}
           className="flex items-center justify-end text-blue-600 mt-3 cursor-pointer"
         >
-          <p className="mr-1">Read more</p>
-          <ArrowRight size={16} />
+          <p className="mr-1 text-[12px]">Read more</p>
+          <ArrowRight size={14} />
         </div>
       </div>
     </div>

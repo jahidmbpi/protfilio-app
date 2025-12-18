@@ -6,8 +6,8 @@ import animationData from "../../../public/banner.json";
 import { LucideFileText } from "lucide-react";
 export default function Banner() {
   return (
-    <div className="max-w-7xl mx-auto w-full">
-      <div className=" items-center justify-between flex h-screen flex-col-reverse mt-8S md:flex-row">
+    <div className="max-w-6xl mx-auto w-full ">
+      <div className="items-center justify-between flex h-screen flex-col-reverse mt-8S md:flex-row p-3">
         <div className="flex-1 space-y-5 p-2 md:p-0">
           <h2 className="capitalize text-[16px]  font-sans p-1">hi,I’m</h2>
 
@@ -15,7 +15,7 @@ export default function Banner() {
             <Highlight> Jahidul Islam</Highlight>
           </h2>
 
-          <h2 className="text-4xl md:text-6xl font-medium font-popinse text-[#112A46] uppercase">
+          <h2 className="text-4xl md:text-5xl font-medium font-popinse text-[#112A46] uppercase">
             <Typewriter
               words={[
                 "Passionate MERN ",
