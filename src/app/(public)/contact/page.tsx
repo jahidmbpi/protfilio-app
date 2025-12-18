@@ -53,7 +53,7 @@ export default function Page() {
                     email
                   </label>
                   <input
-                    type="text"
+                    type="email"
                     {...register("email", {
                       required: "Full name is required",
                     })}

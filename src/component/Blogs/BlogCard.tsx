@@ -20,11 +20,9 @@ export default function BlogCard({ post }: FeturePostCardProps) {
           className="object-cover"
         ></Image>
       </div>
-      <div className="px-3">
-        <h2 className="font-sans font-semibold group-hover:text-blue-600">
-          {post.title}
-        </h2>
-        <p>
+      <div className="">
+        <h2 className="font-sans font-semibold text-black/80">{post.title}</h2>
+        <p className="font-sans font-normal text-slate-700 text-[16px]">
           {post.contant.split(" ").slice(0, 20).join(" ") +
             (post.contant.split(" ").length > 20 ? "..." : "")}{" "}
         </p>

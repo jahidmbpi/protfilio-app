@@ -28,12 +28,9 @@ export default async function BlogDetails({
   console.log(data);
 
   return (
-    <div className="max-w-6xl h-screen  mx-auto w-full md:mt-24 flex justify-center">
-      <div className="flex flex-col items-center w-full md:w-[70%] px-4 space-y-3">
-        <div className="md:w-[80%] w-full md:px-2 space-y-1">
-          <h2 className="font-sans  text-xl md:text-2xl font-medium   ">
-            {data.title}
-          </h2>
+    <div className="max-w-5xl min-h-screen mx-auto flex ">
+      <div className="flex flex-col items-center justify-center w-full md:w-full space-y-3 p-2 md:p-0 mt-[60px] md:mt-0">
+        <div className="md:w-[80%] w-full md:px-2 space-y-3">
           <div className="flex items-center space-x-2">
             <CircleUserRound className="bg-blue-400 rounded-full" size={30} />
             <div className="font-serif font-light leading-tight">
@@ -41,19 +38,20 @@ export default async function BlogDetails({
               <p>{data.author.email}</p>
             </div>
           </div>
+          <h2 className="font-sans md:text-2xl font-medium ">{data.title}</h2>
         </div>
 
-        <div className="h-[300px] w-full md:w-[600px] relative overflow-hidden rounded-lg">
+        <div className="h-[300px] w-full md:w-[800px] relative overflow-hidden rounded-lg">
           <Image
             src="https://i.ibb.co.com/fVDxS4Cr/6.jpg"
             alt="this is post"
-            className="object-cover"
-            fill
+            width={1000}
+            height={1000}
           />
         </div>
 
         <div className="w-full md:w-[80%] text-left md:px-2">
-          <p className="text-[16px] font-serif leading-relaxed">
+          <p className="text-[16px] font-serif leading-relaxed text-slate-700">
             {data.contant}
           </p>
         </div>
