@@ -3,7 +3,7 @@ import photo from "../../../public/photo1.png";
 export default function About() {
   return (
     <div className="max-w-7xl mx-auto">
-      <div className="flex flex-col p-2 md:flex-row items-center justify-between w-full gap-4 md:gap-8">
+      <div className="flex flex-col p-2 md:flex-row items-center justify-between w-full gap-4 md:gap-6">
         <div className="bg-white/10 backdrop-blur-md rounded-2xl shadow-lg border border-white/20 md:h-[400px] ">
           <div className="">
             <Image

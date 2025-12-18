@@ -3,6 +3,7 @@ import { Highlight } from "@/components/ui/hero-highlight";
 import Lottie from "lottie-react";
 import { Typewriter } from "react-simple-typewriter";
 import animationData from "../../../public/banner.json";
+import { LucideFileText } from "lucide-react";
 export default function Banner() {
   return (
     <div className="max-w-7xl mx-auto w-full">
@@ -33,16 +34,16 @@ export default function Banner() {
             Hi, I’m Jahid — a passionate MERN Stack Developer dedicated to
             building creative, functional, and performance-driven web solutions.
           </p>
-          <div className="flex  md:justify-start gap-4 md:gap-6 mt-4">
+          <div className="flex  md:justify-start gap-4 md:gap-6 mt-6">
             {/* Resume Button */}
-            <button className="relative px-5 py-2 md:px-8 md:py-2.5 text-sm md:text-lg overflow-hidden font-semibold text-white uppercase rounded-lg md:rounded-xl bg-gradient-to-r from-[#007BFF] to-[#00C6FF] transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-[0_0_20px_#00C6FF]">
-              <span className="relative z-10">Resume</span>
-              <span className="absolute inset-0 bg-linear-to-r from-[#00C6FF] to-[#007BFF] opacity-0 transition-opacity duration-300 ease-in-out hover:opacity-100 rounded-lg md:rounded-xl"></span>
+            <button className="border flex items-center justify-center gap-2 w-[130px] rounded-sm bg-[#dce1e5] text-[#112A46]  carsor-pointer capitalize p-2 font-serif ">
+              <LucideFileText size={16} />{" "}
+              <span className="font-normal">resume</span>
             </button>
 
             {/* Blog Button */}
-            <button className="relative px-5 py-2 md:px-8 md:py-3 text-sm md:text-lg overflow-hidden font-semibold text-gray-300 uppercase rounded-lg md:rounded-xl border border-[#00C6FF] bg-transparent transition-all duration-300 ease-in-out hover:bg-[#00C6FF]/10 hover:text-[#00C6FF] hover:shadow-[0_0_20px_#00C6FF]">
-              <span className="relative z-10">Blog</span>
+            <button className=" font- w-[130px] rounded-sm bg-gray-300/20 carsor-pointer capitalize p-2">
+              Blog
             </button>
           </div>
         </div>
