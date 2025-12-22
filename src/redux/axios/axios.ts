@@ -1,6 +1,6 @@
 import axios from "axios";
 export const axiousInstance = axios.create({
-  baseURL: "https://protfolio-server-chi.vercel.app/api/v1",
+  baseURL: `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/v1`,
   withCredentials: true,
 });
 
