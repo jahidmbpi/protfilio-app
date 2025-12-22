@@ -19,7 +19,7 @@ export default function Page() {
     <div className="max-w-5xl flex mx-auto min-h-screen ">
       <div className="flex items-center w-full mt-7 sm:mt-0 p-2 sm:p-0">
         <div className="w-full">
-          <div className="mb-5 sm:mb-7 md:mb-10">
+          <div className="mb-5 sm:mb-7 md:my-10">
             <h2 className="text-xl md:text-2xl font-semibold capitalize text-black">
               contact me
             </h2>
