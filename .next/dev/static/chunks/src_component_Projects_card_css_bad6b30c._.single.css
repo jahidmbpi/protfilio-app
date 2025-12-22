@@ -1,0 +1,27 @@
+/* [project]/src/component/Projects/card.css [app-client] (css) */
+.mySwiper {
+  width: 100%;
+  max-width: 500px;
+  height: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.mySwiper .swiper-slide {
+  color: #e0d4d4;
+  background: #ede7e7;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  display: flex;
+  box-shadow: 0 0 10px #bdbfbf77;
+}
+
+@media (max-width: 640px) {
+  .mySwiper {
+    height: 300px;
+  }
+}
+
+/*# sourceMappingURL=src_component_Projects_card_css_bad6b30c._.single.css.map*/

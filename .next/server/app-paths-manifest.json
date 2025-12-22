@@ -1,0 +1,12 @@
+{
+  "/(public)/about/page": "app/(public)/about/page.js",
+  "/(public)/blogs/[id]/page": "app/(public)/blogs/[id]/page.js",
+  "/(public)/blogs/page": "app/(public)/blogs/page.js",
+  "/(public)/contact/page": "app/(public)/contact/page.js",
+  "/(public)/login/page": "app/(public)/login/page.js",
+  "/(public)/page": "app/(public)/page.js",
+  "/(public)/projects/page": "app/(public)/projects/page.js",
+  "/_global-error/page": "app/_global-error/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js"
+}
