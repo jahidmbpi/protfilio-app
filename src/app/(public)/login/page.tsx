@@ -1,11 +1,12 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
-
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import Password from "@/component/login/password";
 import { useForm } from "react-hook-form";
 import Image from "next/image";
 import photo from "../../../../public/proflio.png";
+import { useLogInMutation } from "@/redux/feature/auth/auth.api";
 export default function Page() {
+  const [login] = useLogInMutation();
   const {
     register,
     handleSubmit,
@@ -13,6 +14,8 @@ export default function Page() {
   } = useForm();
   const onSubmit = async (data: any) => {
     console.log(data);
+    const result = await login(data).unwrap();
+    console.log(result);
   };
 
   return (

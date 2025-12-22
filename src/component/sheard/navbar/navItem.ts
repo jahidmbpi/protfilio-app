@@ -19,4 +19,8 @@ export const navitem = [
     path: "/blogs",
     route: "Blogs",
   },
+  {
+    path: "/login",
+    route: "login",
+  },
 ];

@@ -1,3 +1,4 @@
+"use client";
 import { baseApi } from "../../baseApi";
 
 export const authApi = baseApi.injectEndpoints({
@@ -19,3 +20,4 @@ export const authApi = baseApi.injectEndpoints({
     }),
   }),
 });
+export const { useLogInMutation } = authApi;

@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Poppins, Orbitron, Nunito } from "next/font/google";
 import "./globals.css";
 
+import ReduxProvider from "@/component/provider/provider";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -41,7 +43,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} ${orbitron.variable} ${nunito.variable} antialiased bg-linear-to-bl from-[#519ff1]/70 via-[#f7f7f7] to-[#dcdbdb]`}
       >
-        {children}
+        <ReduxProvider> {children}</ReduxProvider>
       </body>
     </html>
   );

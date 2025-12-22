@@ -1,6 +1,7 @@
 import axios from "axios";
 export const axiousInstance = axios.create({
-  baseURL: "https://some-domain.com/api/",
+  baseURL: "https://protfolio-server-chi.vercel.app/api/v1",
+  withCredentials: true,
 });
 
 axiousInstance.interceptors.request.use(
