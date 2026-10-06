@@ -1,4 +1,5 @@
-[00:00:01.081] Server  LOG     ✓ Ready in 787ms
-[00:00:06.409] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:06.677] Browser WARN    Image with src "/_next/static/media/photo1.5a847163.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:00:01.023] Server  LOG     ✓ Ready in 715ms
+[00:00:11.166] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:47.498] Server  ERROR   ⨯ TypeError: fetch failed
+[00:01:47.681] Browser ERROR   uncaughtError: TypeError: fetch failed
+[00:01:58.841] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
